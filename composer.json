@@ -1,0 +1,13 @@
+{
+    "name": "epikhin/siltech-main",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "^6.5"
+    },
+    "authors": [
+        {
+            "name": "Maxim N Epikhin",
+            "email": "mepihindeveloper@gmail.com"
+        }
+    ]
+}

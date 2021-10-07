@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <title>Siltech</title>
+</head>
+<body>
+<!-- Начало: анимированный фон -->
+<div class="container">
+    <div class="morph-wrap">
+        <svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
+            <path d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z"/>
+        </svg>
+    </div>
+</div>
+<!-- Конец: анимированный фон -->
+
+<!-- Начало: мобильное меню -->
+<div class="mobile-menu-wrapper">
+    <header class="container mobile-menu">
+        <ul class="mobile-menu__list">
+            <li>
+                <a href="#details" class="menu__item mobile-menu__item nav-link px-2 link-secondary">О нас</a>
+            </li>
+            <li>
+                <a href="#technology-stack" class="menu__item mobile-menu__item nav-link px-2 link-secondary">Стек технологий</a>
+            </li>
+            <li>
+                <a href="#our-projects" class="menu__item mobile-menu__item nav-link px-2 link-secondary">Наши проекты</a>
+            </li>
+            <li>
+                <a href="#payment" class="menu__item mobile-menu__item nav-link px-2 link-secondary">Оплата</a>
+            </li>
+            <li>
+                <a href="#" class="menu__item mobile-menu__item nav-link px-2 link-secondary" data-bs-toggle="modal" data-bs-target="#orderProjectModal">Заказать проект</a>
+            </li>
+        </ul>
+    </header>
+</div>
+<!-- Конец: мобильное меню -->
+
+<!-- Начало: меню -->
+<div class="menu">
+    <header class="container menu__header d-flex flex-wrap align-items-center justify-content-between mb-4">
+        <a href="/">
+            <span class="logo">Siltech</span>
+        </a>
+        <ul class="menu__list nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 nav">
+            <li class="nav-item">
+                <a href="#details" class="menu__item nav-link px-2 link-secondary">О нас</a>
+            </li>
+            <li class="nav-item">
+                <a href="#technology-stack" class="menu__item nav-link px-2 link-secondary">Стек технологий</a>
+            </li>
+            <li class="nav-item">
+                <a href="#our-projects" class="menu__item nav-link px-2 link-secondary">Наши проекты</a>
+            </li>
+            <li class="nav-item">
+                <a href="#payment" class="menu__item nav-link px-2 link-secondary">Оплата</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="menu__item nav-link px-2 link-secondary active text-primary" data-bs-toggle="modal" data-bs-target="#orderProjectModal">Заказать проект</a>
+            </li>
+        </ul>
+        <div class="burger-wrapper">
+            <div class="mobile-menu__burger burger">
+                <div class="burger__wrapper d-flex flex-column justify-content-between">
+                    <span class="burger__item"></span>
+                    <span class="burger__item"></span>
+                    <span class="burger__item"></span>
+                </div>
+            </div>
+        </div>
+        <div class="close-mobile-menu-btn-wrapper">
+            <button type="button" class="btn-close" aria-label="Close"></button>
+        </div>
+    </header>
+</div>
+<!-- Конец: меню -->
+
+<!-- Начало: главный экран -->
+<section class="main">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-6 col-md-12 main__text-content">
+                <div class="main__header">
+                    <p class="main__header-text-bold mb-sm-0 mb-0">Программирование</p>
+                    <p class="main__header-text">как способ жизни!</p>
+                </div>
+                <p class="main__text">
+                    Наши услуги помогут вам! Большой выбор всего, что может вам пригодиться!
+                </p>
+                <p class="main__text">
+                    Мы умеем много: разработка приложений под android, IOS, создание сложных и простых web сайтов и серверов, также в нашем штате есть: юристы, переводчики, бухгалтеры, экономисты, game dev разработчики и другие.
+                </p>
+            </div>
+            <div class=" col-lg-6 col-md-12 discuss-question">
+                <div class="discuss-question-wrapper">
+                    <h3 class="discuss-question-title">
+                        Обсудить проект
+                    </h3>
+                    <form class="discuss-question-form needs-validation" method="POST">
+                        <div class="mb-3">
+                            <label for="clientNameTop" class="form-label">Имя</label>
+                            <input type="text" class="form-control" id="clientNameTop" name="clientName" placeholder="Имя" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="clientPhoneTop" class="form-label">Телефон</label>
+                            <input type="tel" class="form-control" id="clientPhoneTop" name="clientPhone" placeholder="Телефон" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                    <div class="disclaimer">
+                        Нажимая кнопку “Отправить", вы автоматически соглашаетесь с политикой конфиденциальности и даёте свое согласие на обработку персональных данных.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Конец: главный экран -->
+
+<!-- Начало: информация -->
+<section class="info-block details" id="details">
+    <div class="container">
+        <h2 class="info-block__title">Информация</h2>
+        <p>
+            В данном разделе представлена информация о наших принципах и постулатах, которыми мы оперируем.
+        </p>
+        <div class="info-block__content d-flex justify-content-between row">
+            <div class="col-12 col-sm-12 col-lg-4 info-block__subblock">
+                <div class="info-block__subtitle-wrapper">
+                    <h3 class="info-block__subtitle">
+                        Гарантия
+                    </h3>
+
+                    <div class="details-icon" style="background-image: url(assets/images/guarantee-certificate.png);"></div>
+                </div>
+                <p class="info-block__text">
+                    Мы верим в нащи продукты, поэтому даём пожизненую гарантию на нашу работу!
+                </p>
+            </div>
+            <div class="col-12 col-sm-12  col-lg-4 info-block__subblock">
+                <div class="info-block__subtitle-wrapper">
+                    <h3 class="info-block__subtitle">
+                        Результаты работы
+                    </h3>
+                    <div class="details-icon" style="background-image: url(assets/images/garantee.png);"></div>
+                </div>
+                <p class="info-block__text">
+                    Вы всегда можете отследить процесс работы над заказом. Все работы разрабатываются под чётким присмотром наших лучших специалистов. У вас всегда будет по рукой ваш персональный менеджер
+                </p>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-4 info-block__subblock">
+                <div class="info-block__subtitle-wrapper">
+                    <h3 class="info-block__subtitle">
+                        Почему именно мы?
+                    </h3>
+                    <div class="details-icon" style="background-image: url(assets/images/cooperate.png);"></div>
+                </div>
+                <p class="info-block__text">
+                    Потому что качественные проекты делаем только мы и наша команда! Мы верим в наш профессионализм, поэтому готовы давать вам пожизненную гарантию
+                </p>
+            </div>
+        </div>        
+    </div>
+</section>
+<!-- Конец: информация -->
+
+<!-- Начало: стек технологий -->
+<section class="info-block technology-stack" id="technology-stack">
+    <div class="container">
+        <h2 class="info-block__title">Наш стек технологий</h2>
+        <p class="info-block__text">
+            Вы можете обсудить проект с нашими специалистами и они помогут Вам подобрать необходимый стек технологий конкретно под Вашу задачу.
+            Здесь представлены основные наиболее востребованные и часто используемые технологии. Но это далеко не все, с чем может работать наша команда.
+        </p>
+        <div class="technology-stack__block">
+            <h4 class="technology-stack__title">Платформы</h4>
+
+            <div class="d-flex flex-wrap technology-stack-list">
+                <div class="d-flex align-items-center technology-stack-list__item">
+                    <p class="d-none d-lg-block">Android</p> <div class="technology-stack-list__icon" style="background-image: url(assets/images/android-icon.png);"></div>
+                </div>
+
+                <div class=" d-flex align-items-center  technology-stack-list__item">
+                    <p class="d-none d-lg-block">IOS</p> <div class="technology-stack-list__icon" style="background-image: url(assets/images/ios-icon.png);"></div>
+                </div>
+
+                <div class="d-flex align-items-center technology-stack-list__item">
+                    <p class="d-none d-lg-block">Веб-разработка</p> <div class="technology-stack-list__icon" style="background-image: url(assets/images/web-development-icon.png);"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Конец: стек технологий -->
+
+<!-- Начало: гарантии -->
+<section class="info-block guarantee" id="guarantee">
+    <div class="container">
+        <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-12 col-sm-12 col-lg-6 guarantee__subblock">
+                <div class="discuss-question">
+                    <div class="discuss-question-wrapper">
+                        <h3 class="discuss-question-title">
+                            Связаться с менеджером
+                        </h3>
+                        <form class="discuss-question-form guarantee-form needs-validation" method="POST">
+                            <div class="mb-3">
+                                <label for="clientNameTop" class="form-label">Имя</label>
+                                <input type="text" class="form-control" id="clientNameTop" name="clientName" placeholder="Имя" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="clientPhoneTop" class="form-label">Телефон</label>
+                                <input type="tel" class="form-control" id="clientPhoneTop" name="clientPhone" placeholder="Телефон" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Отправить</button>
+                        </form>
+                        <div class="disclaimer">
+                            Нажимая кнопку “Отправить", вы автоматически соглашаетесь с политикой конфиденциальности и даёте свое согласие на обработку персональных данных.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 guarantee__subblock">
+                <h2 class="info-block__title">
+                    Гарантии
+                </h2>
+                <div class="info-block__content">
+                    <div class="info-block__subblock">
+                        <h3 class="info-block__subtitle">
+                            Что мы гарантируем?
+                        </h3>
+                        
+                        <p class="info-block__text">
+                            Скорость, качество
+                        </p>
+                    </div>
+                    <div class="info-block__subblock">
+                        <h3 class="info-block__subtitle">
+                            Будет ли у меня связь с менеджером после окончания проекта?
+                        </h3>
+                        
+                        <p class="info-block__text">
+                            Да, менеджер ответит вам в любое время дня и ночи
+                        </p>
+                    </div>
+                    <div class="info-block__subblock">
+                        <h3 class="info-block__subtitle">
+                            Когда начнется выполнение заказа?
+                        </h3>
+                        <p class="info-block__text">
+                            Наша работа стартует сразу после вашего подтверждения
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Конец: гарантии -->
+
+<!-- Начало: проекты -->
+<section class="info-block our-projects" id="our-projects">
+    <div class="container">
+        <div class="row d-flex justify-content-between">
+            <div class="col-12 col-sm-12 col-lg-3 our-projects__content">
+                <h2 class="info-block__title">Наши проекты</h2>
+                <p>
+                    Для наших клиентов мы реализовали множество проектов различной сложности.
+                    IOS, Android и веб-приложения будут выполнены на высшем уровне нашей командой разработчиков.
+                    <a href="projects.html#our-projects">Можете ознакомиться c нашими выполненными заказами и отзывами заказчиков.</a>
+                </p>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-3 our-projects__example our-projects__example_mobile">
+                <div></div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 our-projects__example our-projects__example_descktop">
+                <div></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Конец: проекты -->
+
+<!-- Начало: оплата -->
+<section class="info-block payment" id="payment">
+    <div class="container">
+        <h2 class="info-block__title">Оплата</h2>
+        <div class="info-block__content row">
+            <div class="col-lg-4 col-md-12 info-block__subblock">
+                <div class="info-block__subtitle-wrapper">
+                    <span class="payment__subblock-num subblock-num">1.</span>
+                    <h3 class="info-block__subtitle">
+                        Как проходит оплата?
+                    </h3>
+                </div>
+                <p class="info-block__text">
+                    Оплата будет проходить переводом на банковский счёт ИП, вы получите чек и квитанцию. Также будет составлен договор оказания услуг. Поэтому вы будете защищены на 100%
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-12 info-block__subblock">
+                <div class="info-block__subtitle-wrapper">
+                    <span class="payment__subblock-num subblock-num">2.</span>
+                    <h3 class="info-block__subtitle">
+                        Как можно подписать договор?
+                    </h3>
+                </div>
+                <p class="info-block__text">
+                    Договор можно будет подписать двумя способами дистанционно или физически, если вы выберите физически к вам приедет наш представитель в строгом костюме и вы сможете подписать договор и задать интересующие вас вопросы.
+                </p>
+            </div>
+            <div class="info-block__subblock col-lg-4 col-md-12 d-flex flex-column">
+                <div class="info-block__subtitle-wrapper">
+                    <span class="payment__subblock-num subblock-num">3.</span>
+                    <h3 class="info-block__subtitle">
+                        Что нужно, чтобы подписать договор?
+                    </h3>
+                </div>
+                <p class="info-block__text">
+                    Для этого нужны только ваши персональные данные
+                </p>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <button class="btn btn-primary payment-order-project-btn" data-bs-toggle="modal" data-bs-target="#orderProjectModal">
+                Заказать проект!
+            </button>
+        </div>
+    </div>
+</section>
+<!-- Конец: оплата -->
+
+<!-- Начало: футер -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-wrapper row">
+            <p class="col-12 col-sm-12 col-lg-6 text-start">
+                &copy; Студия разработки приложений <span class="logo">Siltech</span>
+            </p>
+            <p class="rights col-12 col-sm-12 col-lg-6 text-start text-lg-end">
+                2020 — 2021. Все права защищены.
+            </p>
+        </div>
+    </div>
+</footer>
+<!-- Конец: футер -->
+
+<!-- Начало: модальное окно -->
+<div class="modal fade project-creation-modal" id="orderProjectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="">Заявка на создание проекта</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="orderProjectForm" class="needs-validation" method="POST">
+                    <div class="mb-4 mt-3">
+                        <label for="customerEmail" class="form-label">Укажите вашу электронную почту</label>
+                        <input type="email" id="customerEmail" name="customerEmail" class="form-control" placeholder="Электронная почта" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="customerTelegram" class="form-label">Укажите ваш Telegram</label>
+                        <input type="text" id="customerTelegram" name="customerTelegram" class="form-control" placeholder="@telegramAccount" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label">У Вас есть техническое задание?</label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="technicalTaskCheckbox" id="technicalTaskCheckbox1" required>
+                            <label class="form-check-label" for="technicalTaskCheckbox1">Да</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="technicalTaskCheckbox" id="technicalTaskCheckbox2" required>
+                            <label class="form-check-label" for="technicalTaskCheckbox2">Нет</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="projectConception" class="form-label">Опишите концепцию вашего проекта</label>
+                        <input type="text" id="projectConception" name="projectConception" class="form-control" placeholder="Концепция..." required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="projectTerms" class="form-label">Укажите желательные сроки</label>
+                        <input type="text" id="projectTerms" name="projectTerms" class="form-control" placeholder="Срок" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="projectBudget" class="form-label">Укажите желаемый бюджет</label>
+                        <input type="text" id="projectBudget" name="projectBudget" class="form-control" placeholder="Желаемый бюджет" required>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary project-creation-form-submit-btn" id="orderProjectFormSubmitBtn">Отправить заявку</button>
+
+                <div class="disclaimer">
+                    Нажимая кнопку “Отправить заявку", вы автоматически соглашаетесь с политикой конфиденциальности и даёте свое согласие на обработку персональных данных.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Конец: модальное окно -->
+
+<!-- Начало: alert -->
+<div id="alert" class="modal fade alert" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p id="alert-text-content" class="alert-text-content">s</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Конец: alert -->
+
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/anime.min.js"></script>
+<script src="js/scrollMonitor.js"></script>
+<script src="js/animate-bg.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

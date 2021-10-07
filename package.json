@@ -1,0 +1,17 @@
+{
+  "name": "programmingaslifeway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.55.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.1"
+  }
+}
