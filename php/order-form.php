@@ -19,22 +19,18 @@ $fieldsMap = [
 /** @var PHPMailer $mail */
 
 // Кому
-$mail->addAddress('mail@site.com', 'Иван Петров');
+$mail->addAddress('', '');
 
 // Тема письма
-$mail->Subject = 'Обсуждение проекта/Связь с менеджером';
+$mail->Subject = 'Заказ проекта';
 
 $body = '';
 
 foreach ($postData as $field => $datum) {
-	$body.= "<p><strong>{$fieldsMap[$field]}:</strong> {$datum}</p>";
+	$body .= "<p><strong>{$fieldsMap[$field]}:</strong> {$datum}</p>";
 }
 
 $mail->msgHTML($body);
-
-// Приложение
-$mail->addAttachment(__DIR__ . '/image.jpg');
-
 $mail->send();
 
 if ($mail->isError()) {

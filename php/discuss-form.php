@@ -10,7 +10,7 @@ $a = 1;
 /** @var PHPMailer $mail */
 
 // Кому
-$mail->addAddress('mail@site.com', 'Иван Петров');
+$mail->addAddress('', '');
 // Тема письма
 $mail->Subject = 'Обсуждение проекта/Связь с менеджером';
 // Тело письма

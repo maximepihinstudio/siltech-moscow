@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="styles/main.css">
+	
+	<link href="/assets/styles/bootstrap/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/assets/styles/main.css">
 
     <title>Siltech</title>
 </head>
@@ -108,12 +106,12 @@
                     </h3>
                     <form class="discuss-question-form needs-validation" method="POST">
                         <div class="mb-3">
-                            <label for="clientNameTop" class="form-label">Имя</label>
-                            <input type="text" class="form-control" id="clientNameTop" name="clientName" placeholder="Имя" required>
+                            <label for="clientNameDiscussQuestionTop" class="form-label">Имя</label>
+                            <input type="text" class="form-control" id="clientNameDiscussQuestionTop" name="clientName" placeholder="Имя" required>
                         </div>
                         <div class="mb-3">
-                            <label for="clientPhoneTop" class="form-label">Телефон</label>
-                            <input type="tel" class="form-control" id="clientPhoneTop" name="clientPhone" placeholder="Телефон" required>
+                            <label for="clientPhoneDiscussQuestionTop" class="form-label">Телефон</label>
+                            <input type="tel" class="form-control" id="clientPhoneDiscussQuestionTop" name="clientPhone" placeholder="Телефон" required>
                         </div>
                         <button type="submit" class="btn btn-primary">Отправить</button>
                     </form>
@@ -144,7 +142,7 @@
                     <div class="details-icon" style="background-image: url(assets/images/guarantee-certificate.png);"></div>
                 </div>
                 <p class="info-block__text">
-                    Мы верим в нащи продукты, поэтому даём пожизненую гарантию на нашу работу!
+                    Мы верим в наши продукты, поэтому даём пожизненую гарантию на нашу работу!
                 </p>
             </div>
             <div class="col-12 col-sm-12  col-lg-4 info-block__subblock">
@@ -215,12 +213,12 @@
                         </h3>
                         <form class="discuss-question-form guarantee-form needs-validation" method="POST">
                             <div class="mb-3">
-                                <label for="clientNameTop" class="form-label">Имя</label>
-                                <input type="text" class="form-control" id="clientNameTop" name="clientName" placeholder="Имя" required>
+                                <label for="clientNameDiscussQuestion" class="form-label">Имя</label>
+                                <input type="text" class="form-control" id="clientNameDiscussQuestion" name="clientName" placeholder="Имя" required>
                             </div>
                             <div class="mb-3">
-                                <label for="clientPhoneTop" class="form-label">Телефон</label>
-                                <input type="tel" class="form-control" id="clientPhoneTop" name="clientPhone" placeholder="Телефон" required>
+                                <label for="clientPhoneDiscussQuestion" class="form-label">Телефон</label>
+                                <input type="tel" class="form-control" id="clientPhoneDiscussQuestion" name="clientPhone" placeholder="Телефон" required>
                             </div>
                             <button type="submit" class="btn btn-primary">Отправить</button>
                         </form>
@@ -277,7 +275,7 @@
                 <p>
                     Для наших клиентов мы реализовали множество проектов различной сложности.
                     IOS, Android и веб-приложения будут выполнены на высшем уровне нашей командой разработчиков.
-                    <a href="projects.html#our-projects">Можете ознакомиться c нашими выполненными заказами и отзывами заказчиков.</a>
+                    <a href="/projects.html">Можете ознакомиться c нашими выполненными заказами и отзывами заказчиков.</a>
                 </p>
             </div>
             <div class="col-12 col-sm-12 col-lg-3 our-projects__example our-projects__example_mobile">
@@ -429,10 +427,17 @@
 </div>
 <!-- Конец: alert -->
 
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/anime.min.js"></script>
-<script src="js/scrollMonitor.js"></script>
-<script src="js/animate-bg.js"></script>
-<script src="js/main.js"></script>
+<script src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="/assets/js/anime.min.js"></script>
+<script src="/assets/js/scrollMonitor.js"></script>
+<script src="/assets/js/animate-bg.js"></script>
+<script src="/assets/js/main.js"></script>
+<script>
+(function(w,d,u){
+var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+})(window,document,'https://cdn-ru.bitrix24.ru/b19103014/crm/tag/call.tracker.js');
+</script>
 </body>
 </html>
